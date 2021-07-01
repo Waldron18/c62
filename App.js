@@ -26,6 +26,9 @@ export default class App extends React.Component {
     if(this.state.weather){
       return <View style={styles.container}>
       <Text>{this.state.weather.main.temp}&deg;C</Text>
+      <Image source={require("./assets/clouds.jpg")} style={{width:100 , height: 100}}>
+        
+      </Image>
       </View>;
     }else 
     return <View style={styles.container}>
